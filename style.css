@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+	font-family: "Inter", sans-serif;
+}
+body {
+    height: 100vh;
+	color: #fff;
+	background: no-repeat center/cover url("./asset/mobile-bg.jpg");
+}
+main {
+    padding: 32px 16px;
+}
+.first-sect {
+	display: grid;
+	grid-template-columns: 1fr 0.05fr;
+	margin-bottom: 9.188rem;
+}
+.first-para {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	width: 94%;
+	padding-bottom: 12px;
+}
+h2 {
+	font-size: 18px;
+	font-weight: 700;
+}
+.sec-sect {
+	display: flex;
+	flex-direction: column;
+}
+.f-r,
+.div-hour,
+.div-date {
+	display: flex;
+	flex-direction: row;
+}
+.f-r {
+	align-items: center;
+	gap: 1rem;
+}
+.good-morning {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+.good-morning::after {
+	content: "GOOD MORNING";
+}
+.div-hour {
+	align-items: end;
+}
+h1 {
+	font-weight: 700;
+	font-size: 100px;
+}
+.bst {
+	font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.div-date {
+	margin-bottom: 4rem;
+}
+.city,
+.country {
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+.btn-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px 8px 8px 20px;
+	width: 44%;
+	background-color: #fff;
+	border-radius: 999px;
+	gap: 12px;
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+button {
+	padding: 15.5px;
+	border-radius: 50%;
+	background-color: #303030;
+}
+h3 {
+    text-transform: uppercase;
+}
+footer {
+    display: none;
+    background: radial-gradient( #E7EBED, #C9CCCC);
+    padding: 3rem 1rem;
+}
+.dn {
+    display: block;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #303030;
+}
+h3 {
+    font-size: 10px;
+    font-weight: 400;
+}
+.info {
+    font-size: 20px;
+    font-weight: 700;
+}
+@media screen and (min-width: 376px) {
+	body {
+        height: auto;
+		padding: 64px;
+	}
+	.first-sect {
+		grid-template-columns: 0.78fr 0.05fr;
+		margin-bottom: 10rem;
+	}
+	.good-morning::after {
+		content: "GOOD MORNING, IT’S CURRENTLY";
+	}
+	h1 {
+		font-size: 200px;
+	}
+	.bst {
+		font-size: 40px;
+		padding-bottom: 35px;
+	}
+	.city,
+	.country {
+		font-size: 24px;
+		font-weight: 700;
+	}
+    .btn-div {
+        width: 24%;
+    }
+}
